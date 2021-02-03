@@ -1,0 +1,102 @@
+body {
+  background: #e8eeff;
+}
+h1 {
+  color: #E54322;
+}
+.heading {
+  margin-left: 25%;
+}
+
+#app {
+  padding: 50px 0;
+}
+.timeline {
+  margin: 50px 0;
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  text-align: center;
+}
+.timeline li {
+  transition: all 200ms ease-in;
+}
+.timestamp {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 0 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 100;
+}
+.status {
+  padding: 0px 40px;
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid #e8eeff;
+  position: relative;
+  transition: all 200ms ease-in;
+}
+
+.status span {
+  font-weight: 600;
+  padding-top: 30px;
+  text-align: center;
+  width: 70%;
+}
+.status span:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #e54322;
+  border-radius: 25px;
+  border: 1px solid #E54322;
+  position: absolute;
+  background-clip: content-box;
+  top: -15px;
+  left: calc(50% - 12px);
+  transition: all 200ms ease-in;
+  padding: 5px;
+}
+.swiper-control {
+  text-align: right;
+  float: left;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 250px;
+  margin: 50px 0;
+  overflow: hidden;
+}
+.swiper-slide {
+  width: 200px;
+  text-align: center;
+  font-size: 18px;
+}
+.swiper-slide:nth-child(2n) {
+  width: 40%;
+}
+.swiper-slide:nth-child(3n) {
+  width: 20%;
+}
+.next {
+  float: right;
+}
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+
+  display: inline-block;
+  padding: 3px;
+}
+
+/*add style here to edit the arrows*/
+::ng-deep .swiper-button-next {
+
+}
+::ng-deep .swiper-button-prev {
+
+}

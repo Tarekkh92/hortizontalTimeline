@@ -1,0 +1,42 @@
+<div id="app" class="container">
+  <div class="row">
+    <div class="col-md-12">
+
+      <span class="heading">TAMRA RENT A CAR</span>
+      <h1 class="heading">MILESTONES AND TIMELINE</h1>
+
+
+      <swiper class="swiper-container"
+              [slidesPerView]="1"
+              [grabCursor]= "true"
+              [navigation]="true"
+              [pagination]="{ clickable: true }"
+              [autoHeight]="true"
+              [breakpoints]="{
+                  '600': {
+                      slidesPerView: 3
+                  }
+              }"
+      >
+        <div class="swiper-wrapper timeline">
+          <ng-template swiperSlide *ngFor="let slide of slideData">
+            <div class="swiper-content">
+              <div class="timestamp">
+                <span class="date">{{slide.date}}</span>
+              </div>
+              <div class="status">
+                <span>{{slide.content}}</span>
+              </div>
+            </div>
+          </ng-template>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+      </swiper>
+    </div>
+  </div>
+</div>
